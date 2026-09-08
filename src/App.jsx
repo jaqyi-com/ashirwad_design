@@ -160,7 +160,7 @@ export default function App() {
               <FileCode size={22} />
             </div>
             <div className="brand-text">
-              <h1>DXF VAULT</h1>
+              <h1>ASHIRWAD DESIGN</h1>
               <p>9,185 CNC Cut & Vector Designs</p>
             </div>
           </a>
@@ -200,9 +200,9 @@ export default function App() {
         <div className="hero-content">
           <div className="hero-badge">
             <Sparkles size={14} />
-            <span>Mono Dark DXF Collection</span>
+            <span>Ashirwad Design Collection</span>
           </div>
-          <h2 className="hero-title">CNC & Laser Vector Cut Files</h2>
+          <h2 className="hero-title">Ashirwad Design DXF Portfolio</h2>
           <p className="hero-subtitle">
             Explore 9,185 high-precision DXF, SVG, AI, and CDR design files with assigned part numbers. Protected with instant download authorization.
           </p>
