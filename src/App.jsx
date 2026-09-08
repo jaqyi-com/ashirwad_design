@@ -152,7 +152,7 @@ export default function App() {
 
   return (
     <div className="portfolio-app">
-      {/* Header Navigation */}
+      {/* Header Navigation with Top Categories */}
       <header className="header-nav">
         <div className="header-container">
           <a href="#" className="brand-logo">
@@ -176,6 +176,23 @@ export default function App() {
             </button>
           </div>
         </div>
+
+        {/* Top Category Filter Bar */}
+        <div className="top-category-bar">
+          <div className="tag-pills-container">
+            <div className="tag-pills">
+              {CATEGORIES.map(cat => (
+                <button 
+                  key={cat.id}
+                  className={`tag-pill ${selectedCategory === cat.id ? 'active' : ''}`}
+                  onClick={() => setSelectedCategory(cat.id)}
+                >
+                  {cat.label}
+                </button>
+              ))}
+            </div>
+          </div>
+        </div>
       </header>
 
       {/* Hero Section */}
@@ -191,7 +208,7 @@ export default function App() {
           </p>
         </div>
 
-        {/* Search & Tag Filter Controls */}
+        {/* Search Controls Bar */}
         <div className="controls-bar">
           <div className="search-and-sort">
             <div className="search-input-wrapper">
@@ -212,21 +229,6 @@ export default function App() {
                   <X size={14} />
                 </button>
               )}
-            </div>
-          </div>
-
-          {/* Swipeable Category Tags (Touch Optimized) */}
-          <div className="tag-pills-container">
-            <div className="tag-pills">
-              {CATEGORIES.map(cat => (
-                <button 
-                  key={cat.id}
-                  className={`tag-pill ${selectedCategory === cat.id ? 'active' : ''}`}
-                  onClick={() => setSelectedCategory(cat.id)}
-                >
-                  {cat.label}
-                </button>
-              ))}
             </div>
           </div>
         </div>
